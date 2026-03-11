@@ -11,65 +11,67 @@ interface Certification {
 }
 
 export const Certifications = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   const certifications: Certification[] = [
     {
       title: "Programming in Java",
       issuer: "NPTEL",
-      imageSrc: "/certifications/programming-in-java-nptel.jpg",
+      imageSrc: `${baseUrl}certifications/programming-in-java-nptel.jpg`,
       imageAlt: "NPTEL certificate: Programming in Java",
     },
     {
       title: "Full Stack Web Development",
       issuer: "Simplilearn SkillUp",
-      imageSrc: "/certifications/full-stack-web-development-simplilearn.jpg",
+      imageSrc: `${baseUrl}certifications/full-stack-web-development-simplilearn.jpg`,
       imageAlt: "Simplilearn SkillUp certificate: Full Stack Web Development",
     },
     {
       title: "Introduction to Web Development with HTML, CSS, JavaScript",
       issuer: "IBM",
-      imageSrc: "/certifications/intro-web-dev-ibm.jpg",
+      imageSrc: `${baseUrl}certifications/intro-web-dev-ibm.jpg`,
       imageAlt: "IBM certificate: Introduction to Web Development with HTML, CSS, JavaScript",
     },
     {
       title: "AI Workflow: Business Priorities and Data Ingestion",
       issuer: "IBM",
-      imageSrc: "/certifications/ai-workflow-ibm.jpg",
+      imageSrc: `${baseUrl}certifications/ai-workflow-ibm.jpg`,
       imageAlt: "IBM certificate: AI Workflow: Business Priorities and Data Ingestion",
     },
     {
       title: "AI For Everyone",
       issuer: "Certificate",
-      imageSrc: "/certifications/AI For Everyone.jpg",
+      imageSrc: `${baseUrl}certifications/AI For Everyone.jpg`,
       imageAlt: "Certificate: AI For Everyone",
     },
     {
       title: "CSS Basic",
       issuer: "Certificate",
-      imageSrc: "/certifications/CSS Basic.jpg",
+      imageSrc: `${baseUrl}certifications/CSS Basic.jpg`,
       imageAlt: "Certificate: CSS Basic",
     },
     {
       title: "Data Analytics Job Simulation",
       issuer: "Certificate",
-      imageSrc: "/certifications/Data Analytics Job Simulation.jpg",
+      imageSrc: `${baseUrl}certifications/Data Analytics Job Simulation.jpg`,
       imageAlt: "Certificate: Data Analytics Job Simulation",
     },
     {
       title: "Java Basic",
       issuer: "Certificate",
-      imageSrc: "/certifications/Java Basic.jpg",
+      imageSrc: `${baseUrl}certifications/Java Basic.jpg`,
       imageAlt: "Certificate: Java Basic",
     },
     {
       title: "Python Basic",
       issuer: "Certificate",
-      imageSrc: "/certifications/Python Basic.jpg",
+      imageSrc: `${baseUrl}certifications/Python Basic.jpg`,
       imageAlt: "Certificate: Python Basic",
     },
     {
       title: "Python Data Representations",
       issuer: "Certificate",
-      imageSrc: "/certifications/Python Data Representations.jpg",
+      imageSrc: `${baseUrl}certifications/Python Data Representations.jpg`,
       imageAlt: "Certificate: Python Data Representations",
     },
   ];

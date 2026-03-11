@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail } from "lucide-react";
 
 export const Hero = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <section className="min-h-screen flex items-center justify-center px-4 pt-20">
       <div className="max-w-7xl mx-auto w-full">
@@ -82,7 +84,7 @@ export const Hero = () => {
               </a>
 
               <a
-                href="/resume.pdf"
+                href={`${baseUrl}resume.pdf`}
                 download
                 className="px-8 py-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-full font-semibold hover:bg-white/10 transition-all duration-300 flex items-center gap-2"
               >
@@ -104,7 +106,7 @@ export const Hero = () => {
                 <div className="bg-[#0b0b0f] p-2 rounded-full">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
                     <img
-                      src="/profile.jpg"
+                      src={`${baseUrl}profile.jpg`}
                       alt="Portrait of Mirza Sibghathulla Baig"
                       className="w-full h-full object-cover"
                       loading="lazy"

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 export const Navigation = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -41,7 +42,7 @@ export const Navigation = () => {
           >
             <div className="w-9 h-9 rounded-full overflow-hidden border border-blue-400/60 shadow-lg shadow-blue-500/30">
               <img
-                src="/profile.jpg"
+                src={`${baseUrl}profile.jpg`}
                 alt="Portrait of Mirza Sibghathulla Baig"
                 className="w-full h-full object-cover"
               />

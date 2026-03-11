@@ -2,11 +2,6 @@ import { motion } from "framer-motion";
 import { SectionTitle } from "./SectionTitle";
 import { GlassCard } from "./GlassCard";
 
-interface Skill {
-  name: string;
-  category: string;
-}
-
 export const Skills = () => {
   const skillCategories = [
     {
