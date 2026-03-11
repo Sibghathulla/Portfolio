@@ -1,0 +1,9 @@
+To enable the "Download Resume" button:
+
+1) Put your resume PDF in this folder (portfolio/public)
+2) Name it exactly:
+   resume.pdf
+
+Then it will be available at:
+  /resume.pdf
+
