@@ -41,8 +41,7 @@ export const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-xl text-gray-400 mb-4"
             >
-              Aspiring Software Engineer | AI & ML Student | Full Stack
-              Developer
+              Aspiring Software Engineer | AI & ML Student | Full Stack Developer
             </motion.p>
 
             <motion.p
@@ -121,3 +120,4 @@ export const Hero = () => {
     </section>
   );
 };
+

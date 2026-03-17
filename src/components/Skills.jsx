@@ -29,10 +29,7 @@ export const Skills = () => {
   return (
     <section id="skills" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle
-          title="Skills & Technologies"
-          subtitle="Tools I work with"
-        />
+        <SectionTitle title="Skills & Technologies" subtitle="Tools I work with" />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, categoryIndex) => (
@@ -72,3 +69,4 @@ export const Skills = () => {
     </section>
   );
 };
+

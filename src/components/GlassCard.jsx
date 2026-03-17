@@ -1,17 +1,6 @@
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
 
-interface GlassCardProps {
-  children: ReactNode;
-  className?: string;
-  hover?: boolean;
-}
-
-export const GlassCard = ({
-  children,
-  className = "",
-  hover = true,
-}: GlassCardProps) => {
+export const GlassCard = ({ children, className = "", hover = true }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -26,3 +15,4 @@ export const GlassCard = ({
     </motion.div>
   );
 };
+

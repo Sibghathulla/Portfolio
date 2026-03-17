@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
 
-interface SectionTitleProps {
-  title: string;
-  subtitle?: string;
-}
-
-export const SectionTitle = ({ title, subtitle }: SectionTitleProps) => {
+export const SectionTitle = ({ title, subtitle }) => {
   return (
     <div className="text-center mb-16">
       <motion.h2
@@ -30,3 +25,4 @@ export const SectionTitle = ({ title, subtitle }: SectionTitleProps) => {
     </div>
   );
 };
+

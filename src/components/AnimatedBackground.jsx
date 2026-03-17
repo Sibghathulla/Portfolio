@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 export const AnimatedBackground = () => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const canvasRef = useRef(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -13,13 +13,7 @@ export const AnimatedBackground = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const particles: Array<{
-      x: number;
-      y: number;
-      vx: number;
-      vy: number;
-      size: number;
-    }> = [];
+    const particles = [];
 
     for (let i = 0; i < 50; i++) {
       particles.push({
@@ -98,3 +92,4 @@ export const AnimatedBackground = () => {
     />
   );
 };
+

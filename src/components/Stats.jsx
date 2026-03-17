@@ -1,20 +1,8 @@
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-interface StatCardProps {
-  value: number;
-  label: string;
-  suffix?: string;
-  decimals?: number;
-}
-
-const StatCard = ({
-  value,
-  label,
-  suffix = "",
-  decimals = 0,
-}: StatCardProps) => {
-  const ref = useRef<HTMLDivElement>(null);
+const StatCard = ({ value, label, suffix = "", decimals = 0 }) => {
+  const ref = useRef(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 2000 });
   const isInView = useInView(ref, { once: true });
@@ -70,3 +58,4 @@ export const Stats = () => {
     </section>
   );
 };
+

@@ -3,17 +3,8 @@ import { GraduationCap, MapPin, Calendar } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 import { GlassCard } from "./GlassCard";
 
-interface EducationItem {
-  degree: string;
-  field: string;
-  institution: string;
-  location: string;
-  duration: string;
-  grade: string;
-}
-
 export const Education = () => {
-  const education: EducationItem[] = [
+  const education = [
     {
       degree: "Bachelor of Technology",
       field: "Artificial Intelligence and Machine Learning",
@@ -87,3 +78,4 @@ export const Education = () => {
     </section>
   );
 };
+

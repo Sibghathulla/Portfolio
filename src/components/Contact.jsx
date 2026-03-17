@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
+import { Mail, MapPin, Linkedin, Github, MessageCircle } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 import { GlassCard } from "./GlassCard";
 
@@ -12,10 +12,11 @@ export const Contact = () => {
       link: "mailto:Sib262004@gmail.com",
     },
     {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 8897891590",
-      link: "tel:+918897891590",
+      icon: MessageCircle,
+      label: "Mobile Message",
+      value: "Send WhatsApp message",
+      // WhatsApp click-to-chat; number is not shown in UI
+      link: "https://wa.me/918897891590?text=Hi%20Mirza%2C%20I%27d%20like%20to%20connect%20about%20your%20portfolio.",
     },
     {
       icon: MapPin,
@@ -33,7 +34,7 @@ export const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/Sibghathulla",
     },
   ];
 
@@ -112,3 +113,4 @@ export const Contact = () => {
     </section>
   );
 };
+

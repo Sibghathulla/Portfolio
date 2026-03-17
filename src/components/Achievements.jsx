@@ -3,14 +3,8 @@ import { Trophy, Medal } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 import { GlassCard } from "./GlassCard";
 
-interface Achievement {
-  title: string;
-  event: string;
-  type: "prize" | "participation";
-}
-
 export const Achievements = () => {
-  const achievements: Achievement[] = [
+  const achievements = [
     {
       title: "2nd Prize",
       event: "Summit Chapter 2025",
@@ -73,3 +67,4 @@ export const Achievements = () => {
     </section>
   );
 };
+

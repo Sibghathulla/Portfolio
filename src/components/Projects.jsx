@@ -2,14 +2,8 @@ import { motion } from "framer-motion";
 import { SectionTitle } from "./SectionTitle";
 import { GlassCard } from "./GlassCard";
 
-interface Project {
-  title: string;
-  description: string;
-  techStack: string[];
-}
-
 export const Projects = () => {
-  const projects: Project[] = [
+  const projects = [
     {
       title: "StaffSphere – Employee Leave Management System",
       description:
@@ -83,3 +77,4 @@ export const Projects = () => {
     </section>
   );
 };
+
